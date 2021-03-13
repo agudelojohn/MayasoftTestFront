@@ -1,0 +1,33 @@
+.imageContainer {
+  width: auto;
+  max-height: 9rem;
+  align-self: center;
+  clip-path: circle(45px at center);
+  margin-top: 10px;
+}
+a {
+  max-height: 20px;
+  font-size: 8px;
+  background-color: white;
+  color: black;
+}
+img{
+  max-height: 10rem !important;
+}
+
+.card-body {
+  margin-top: -20px;;
+}
+
+.card {
+  max-height: 19rem;
+  min-height: 19rem;
+  width: 14rem;
+  border-radius: 25px;
+  background-color: #d4dbec;
+  border-color: white;
+}
+.features {
+  margin-top: 40px;
+  width: auto !important;
+}
