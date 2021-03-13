@@ -10,8 +10,8 @@
     <div class="container features">
       <div class=row>
         <!-- Dinamiscos -->
-        <div class="col">
-          <a href="#" class="btn btn-primary" >{{Feature}}</a>
+        <div class="col-auto" *ngFor="let i of Features">
+          <a href="#" class="btn btn-primary" >{{i}}</a>
         </div>
       </div>
     </div>

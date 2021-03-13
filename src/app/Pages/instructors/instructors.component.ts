@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InstructorsComponent implements OnInit {
 
-  constructor() { }
+  public Nombre = "JJ";
+  public Subs: String = "Uno,Dos,Tres";
+  public FeaturesList: String[] = ["1","2","3"];
+
+  constructor() {
+   }
 
   ngOnInit(): void {
   }
 
 }
+
