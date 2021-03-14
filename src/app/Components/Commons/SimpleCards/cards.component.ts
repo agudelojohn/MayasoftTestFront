@@ -12,6 +12,9 @@ export class CardsComponent implements OnInit {
   @Input() Name: string;
   @Input() SubjectsByTeacher: string;
   @Input() Features: String[];
+  @Input() ColorBG: String;
+  @Input() ColorBrd: String;
+  @Input() ProfileUrl: String;
 
   constructor() {
   }

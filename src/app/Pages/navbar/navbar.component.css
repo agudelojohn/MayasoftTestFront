@@ -1,3 +1,7 @@
 a{
   color: white !important;
 }
+
+.active{
+  border-bottom: 2px solid white;
+}

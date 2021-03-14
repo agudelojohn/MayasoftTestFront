@@ -1,1 +1,9 @@
-<p>instructors-list works!</p>
+<div class="container">
+  <div class=row>
+    <div class="col" *ngFor="let item of InstructorsArray">
+      {{getTotal()}}
+      <common-cards [ImgUrl]="item['ImgUrl']" [Name]="item['Name']" [SubjectsByTeacher]="item['SubjectsByTeacher']"
+        [Features]="Features" [ColorBG]="ColorBG" [ColorBrd]="ColorBrd"></common-cards>
+    </div>
+  </div>
+</div>

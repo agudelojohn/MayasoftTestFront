@@ -1,0 +1,43 @@
+.imageContainer {
+  width: auto;
+  max-height: 9rem;
+  align-self: center;
+  clip-path: circle(40px at center);
+  /* margin-top: 5px; */
+}
+.btn {
+  /* max-height: 20px; */
+  font-size: 8px;
+  background-color: white;
+  color: black;
+  margin-right: 5px;
+}
+.cardLink{
+  color:black;
+}
+.cardLink:hover {
+  color: white;
+  text-decoration: none;;
+}
+img{
+  max-height: 10rem !important;
+}
+
+.card-body {
+  margin-top: -20px;;
+}
+
+.card {
+  max-height: 18rem;
+  min-height: 18rem;
+  min-width: 230px;
+  max-width: 230px;
+  border-radius: 25px;
+  border-color: white;
+}
+.features {
+  margin-top: 30px;
+}
+.card-subtitle{
+  font-size: 10px;
+}
