@@ -1,13 +1,16 @@
-<a [routerLink]="['instructorDetailPath']" class="cardLink">
-  <div class="card" [style.background-color]="ColorBG" >
+<!-- <a [routerLink]="['instructorDetailPath']" class="cardLink"> -->
+<a [routerLink]="['/instructorDetailPath', Name,ColorBG,ColorBrd]" class="cardLink">
+  <div class="card" [style.background-color]="ColorBG">
     <div class="imageContainer">
       <img class="" src={{ImgUrl}} alt="Card image cap">
     </div>
     <div class="card-body text-center">
       <h5 class="card-title">{{Name}}</h5>
-      <h6 class="card-subtitle" ><div *ngFor="let j of SubjectsByTeacher" >{{j}},</div></h6>
+      <h6 class="card-subtitle">
+        <div *ngFor="let j of SubjectsByTeacher">{{j}},</div>
+      </h6>
       <div class="features text-center align-center">
-        <a *ngFor="let i of Features" href="#" class="btn btn-primary" [style.border-color]="ColorBrd">{{i}}</a>
+        <a *ngFor="let i of Features" class="btn btn-primary" [style.border-color]="ColorBrd">{{i}}</a>
       </div>
     </div>
   </div>

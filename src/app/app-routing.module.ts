@@ -12,7 +12,9 @@ const routes: Routes = [
   { path: 'instructorsPath', component: InstructorsComponent },
   { path: 'studentsPath', component: StudentsComponent },
   { path: 'subjectsPath', component: SubjectsComponent },
-  { path: 'instructorDetailPath', component: InstructorDetailComponent }
+  // { path: 'instructorDetailPath', component: InstructorDetailComponent},
+  { path: '', component: InstructorDetailComponent, pathMatch: 'full'},
+  { path: 'instructorDetailPath/:Name/:ColorBG/:ColorBrd', component: InstructorDetailComponent }
 ];
 
 @NgModule({

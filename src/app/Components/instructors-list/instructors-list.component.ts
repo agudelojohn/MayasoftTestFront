@@ -10,9 +10,9 @@ export class InstructorsListComponent implements OnInit {
   @Input() InstructorsArray: {
     ImgUrl: String,
     Name: String,
-    SubjectsByTeacher: String[]
+    SubjectsByTeacher: String[],
+    Features: String[]
   }[];
-  @Input() Features: String[];
   @Input() View: number;
 
   public ColorBG: String;
@@ -26,7 +26,7 @@ export class InstructorsListComponent implements OnInit {
 
   getTotal(): void {
     this.i++;
-    if (this.i == 6) {
+    if (this.i == 5) {
       this.i = 0;
     }
     this.ColorBG = this.Colors[this.i][0];

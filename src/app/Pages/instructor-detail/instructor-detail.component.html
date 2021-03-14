@@ -1,3 +1,51 @@
-{{Name}}
-{{TytleDescription}}
-{{Description}}
+<h3 class="text-center" style="Color:#58B092; padding-top:2rem;margin-bottom: -2rem;">{{Name}}</h3>
+<div class="container">
+  <div class="row main-row">
+    <div class="col-3">
+      <common-full-card [ImgUrl]="ImgUrl" [Name]="Name" [SubjectsByTeacher]="SubjectsByTeacher" [Features]="Features"
+        [ColorBG]="ColorBG" [ColorBrd]="ColorBrd"></common-full-card>
+    </div>
+    <div class="col-9">
+      <div class="container-fluid">
+        <div class="row second-row">
+          <div class=container>
+            <div class="row">
+              <div class="col-6">
+                <div class="card " >
+                  <div class="card-body " >
+                    <h4 class="card-title WhiteCard">Description of the instructor and their background</h4>
+                    <p class="card-text WhiteCard">{{Description}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card" [style.background-color]="ColorBG">
+                  <div class="card-body" >
+                    <img src={{ImgUrl}} alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="card" [style.background-color]="ColorBG">
+                  <div class="card-body" >
+                    <img src={{ImgUrl}} alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card" [style.background-color]="ColorBrd">
+                  <div class="card-body">
+                    <h5 class="card-title">Description of the instructor and their background</h5>
+                    <p class="card-text">{{Description}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

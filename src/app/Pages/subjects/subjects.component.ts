@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subjects.component.css']
 })
 export class SubjectsComponent implements OnInit {
+  public Nombre = "FilterTitle";
 
-  constructor() { }
+  public Teachers = ['Subject1','Subject1','Subject13','Subject14','Subject15'];
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }

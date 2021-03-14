@@ -37,6 +37,10 @@ img{
 }
 .features {
   margin-top: 30px;
+  margin-left: -1.2rem;
+  min-width: 14.3rem;
+  max-height: 1.7rem;
+  overflow:hidden;
 }
 .card-subtitle{
   font-size: 10px;

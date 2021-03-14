@@ -1,0 +1,30 @@
+.mainRow{
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 11rem;
+  margin-left: 0.01rem;
+}
+
+.MainCard{
+  min-width: 100%;
+  min-height: 11rem;
+  border-radius: 15px;
+  display: flex;
+  align-content: flex-start;
+  background-color: lightblue;
+}
+
+.left{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: red;
+}
+
+img{
+  display: block;
+  margin:auto;
+}
+
+.col-6{
+  display: flex;
+}
