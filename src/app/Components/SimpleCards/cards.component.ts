@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class CardsComponent implements OnInit {
 
+  @Input() ImgUrl: String;
   @Input() Name: string;
   @Input() SubjectsByTeacher: string;
   @Input() Features: String[];

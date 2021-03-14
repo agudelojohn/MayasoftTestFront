@@ -9,6 +9,8 @@ import { SubjectsComponent } from './Pages/subjects/subjects.component';
 import { CalendarComponent } from './Pages/calendar/calendar.component';
 import { StudentsComponent } from './Pages/students/students.component';
 import { CardsComponent } from './Components/simplecards/cards.component';
+import { InstructorsListComponent } from './Components/instructors-list/instructors-list.component';
+import { DynamicFiltersComponent } from './Components/dynamic-filters/dynamic-filters.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CardsComponent } from './Components/simplecards/cards.component';
     SubjectsComponent,
     CalendarComponent,
     StudentsComponent,
-    CardsComponent
+    CardsComponent,
+    InstructorsListComponent,
+    DynamicFiltersComponent
   ],
   imports: [
     BrowserModule,

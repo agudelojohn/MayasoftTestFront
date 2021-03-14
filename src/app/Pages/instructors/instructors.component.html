@@ -1,2 +1,24 @@
-<p>instructors works!</p>
-<common-cards [Name]="Nombre" [SubjectsByTeacher]="Subs" [Features]="FeaturesList"></common-cards>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+      <a>+ New instructor</a>
+      <app-dynamic-filters [FilterTitle]="Nombre" [Filters]="Teachers"></app-dynamic-filters>
+    </div>
+    <div class="col-10" style="background-color: yellow;">
+      <div class="row">
+        <div class="col-10 text-center">Instructors</div>
+        <div class="col-2 text-right"><button>View(ICON)</button></div>
+      </div>
+      <div class=row>
+        <app-instructors-list></app-instructors-list>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- <app-instructors-list></app-instructors-list>
+
+<common-cards [ImgUrl]="URL" [Name]="Nombre" [SubjectsByTeacher]="Subs" [Features]="FeaturesList" *ngFor="let i of Teachers"></common-cards> -->
