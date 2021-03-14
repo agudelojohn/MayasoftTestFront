@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import Teachers from '../../Files/JsonData/teachers.json';
+import TeachersJSON from '../../Files/JsonData/teachers.json';
 
 @Component({
   selector: 'app-instructors',
@@ -8,7 +8,7 @@ import Teachers from '../../Files/JsonData/teachers.json';
 })
 export class InstructorsComponent implements OnInit {
 
-  public InstructorsArray:{ImgUrl:string, Name:String, SubjectsByTeacher:String[],Features:String[]}[] = Teachers;
+  public InstructorsArray:{ImgUrl:string, Name:String, SubjectsByTeacher:String[],Features:String[]}[] = TeachersJSON;
   public Nombre = "FilterTitle";
 
   public Teachers = ['El1','El2','El3','El4','El5'];

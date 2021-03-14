@@ -25,15 +25,19 @@ export class InstructorsListComponent implements OnInit {
   }
 
   getTotal(): void {
+
     this.i++;
     if (this.i == 5) {
       this.i = 0;
     }
+
     this.ColorBG = this.Colors[this.i][0];
     this.ColorBrd = this.Colors[this.i][1];
   }
 
   ngOnInit(): void {
+    this.ColorBG = this.Colors[0][0];
+    this.ColorBrd = this.Colors[0][1];
   }
 
 }

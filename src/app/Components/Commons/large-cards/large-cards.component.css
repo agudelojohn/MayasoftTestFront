@@ -6,23 +6,30 @@
 }
 
 .MainCard{
+  margin-top: 1rem;
   min-width: 100%;
   min-height: 11rem;
-  border-radius: 15px;
   display: flex;
   align-content: flex-start;
-  background-color: lightblue;
+  border-color: white;
 }
 
 .left{
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  background-color: red;
+}
+
+.right{
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 img{
   display: block;
   margin:auto;
+  border-radius: 10px;
+  border: 2px solid white;
+  max-height: 90%;
 }
 
 .col-6{

@@ -1,7 +1,12 @@
-.h3{
-  color: red;
-}
-
 .row{
   padding-top: 10px;
+}
+
+h3{
+  Color:#58B092;
+}
+
+.filters{
+  padding-left: 2.5rem;
+  padding-top: 2rem;
 }

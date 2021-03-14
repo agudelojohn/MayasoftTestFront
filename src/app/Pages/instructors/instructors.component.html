@@ -1,13 +1,19 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-2">
-      <a>+ New instructor</a>
+    <div class="col-2 filters">
+      <a class="addButton" style="color: #58B092;"><strong>+ New instructor</strong></a>
+      <div class="input-group input-group-sm mb-3">
+        <input placeholder="instructors search" type="text" class="form-control" aria-label="Small"
+          aria-describedby="inputGroup-sizing-sm">
+      </div>
       <app-dynamic-filters [FilterTitle]="Nombre" [Filters]="Teachers"></app-dynamic-filters>
     </div>
     <div class="col-10">
       <div class="row">
-        <div class="col-10 text-center"><h3 style="Color:#58B092;">Instructors</h3></div>
-        <div class="col-2 text-right"><button (click)="changeView()" >View(ICON)</button></div>
+        <div class="col-10 text-center">
+          <h3>Instructors</h3>
+        </div>
+        <div class="col-2 text-right"><button (click)="changeView()">View(ICON)</button></div>
       </div>
       <div class=row>
         <app-instructors-list [InstructorsArray]="InstructorsArray" [View]="View"></app-instructors-list>
