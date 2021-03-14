@@ -10,13 +10,14 @@ export class InstructorsListComponent implements OnInit {
   @Input() InstructorsArray: {
     ImgUrl: String,
     Name: String,
-    SubjectsByTeacher: String
+    SubjectsByTeacher: String[]
   }[];
   @Input() Features: String[];
+  @Input() View: number;
 
   public ColorBG: String;
   public ColorBrd: String;
-  public Colors: String[][] = [["#D4DBEC", "#21618C"], ["#ECE6D4", "#9A7D0A"], ["#F8D3E3", "##E74C3C"], ["#E6D4EC", "#7D3C98"], ["#D1E5E9", "#2471A3"], ["#C9B68B", "#7D6608"]];
+  public Colors: String[][] = [["#D4DBEC", "#21618C"], ["#ECE6D4", "#9A7D0A"], ["#F8D3E3", "#E74C3C"], ["#E6D4EC", "#7D3C98"], ["#D1E5E9", "#2471A3"], ["#C9B68B", "#7D6608"]];
   public i: number;
 
   constructor() {

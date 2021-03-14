@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'common-cards',
-  templateUrl: './cards.component.html',
-  styleUrls: ['./cards.component.css']
+  selector: 'common-full-card',
+  templateUrl: './full-card.component.html',
+  styleUrls: ['./full-card.component.css']
 })
-export class CardsComponent implements OnInit {
+export class FullCardComponent implements OnInit {
 
   @Input() ImgUrl: String;
   @Input() Name: string;

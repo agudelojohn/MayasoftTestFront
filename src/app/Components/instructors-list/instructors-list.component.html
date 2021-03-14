@@ -1,9 +1,17 @@
 <div class="container">
-  <div class=row>
+  <div class=row *ngIf="View == 1">
+    <div class="col" *ngFor="let item of InstructorsArray">
+      {{getTotal()}}
+      <common-full-card [ImgUrl]="item['ImgUrl']" [Name]="item['Name']" [SubjectsByTeacher]="item['SubjectsByTeacher']"
+        [Features]="Features" [ColorBG]="ColorBG" [ColorBrd]="ColorBrd"></common-full-card>
+    </div>
+  </div>
+  <div class=row *ngIf="View == 0">
     <div class="col" *ngFor="let item of InstructorsArray">
       {{getTotal()}}
       <common-cards [ImgUrl]="item['ImgUrl']" [Name]="item['Name']" [SubjectsByTeacher]="item['SubjectsByTeacher']"
         [Features]="Features" [ColorBG]="ColorBG" [ColorBrd]="ColorBrd"></common-cards>
     </div>
   </div>
+
 </div>

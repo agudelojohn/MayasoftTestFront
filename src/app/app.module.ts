@@ -12,6 +12,7 @@ import { CardsComponent } from './Components/Commons/SimpleCards/cards.component
 import { InstructorsListComponent } from './Components/instructors-list/instructors-list.component';
 import { DynamicFiltersComponent } from './Components/dynamic-filters/dynamic-filters.component';
 import { InstructorDetailComponent } from './Pages/instructor-detail/instructor-detail.component';
+import { FullCardComponent } from './Components/Commons/full-card/full-card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { InstructorDetailComponent } from './Pages/instructor-detail/instructor-
     CardsComponent,
     InstructorsListComponent,
     DynamicFiltersComponent,
-    InstructorDetailComponent
+    InstructorDetailComponent,
+    FullCardComponent
   ],
   imports: [
     BrowserModule,
