@@ -5,3 +5,7 @@ a{
 .active{
   border-bottom: 2px solid white;
 }
+
+.navbar{
+  background-color: #58B092;
+}
