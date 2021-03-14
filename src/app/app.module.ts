@@ -14,6 +14,9 @@ import { DynamicFiltersComponent } from './Components/dynamic-filters/dynamic-fi
 import { InstructorDetailComponent } from './Pages/instructor-detail/instructor-detail.component';
 import { FullCardComponent } from './Components/Commons/full-card/full-card.component';
 import { LargeCardsComponent } from './Components/Commons/large-cards/large-cards.component';
+import { InformationDetailComponent } from './Pages/information-detail/information-detail.component';
+import { SubjectsResumeComponent } from './Components/subjects-resume/subjects-resume.component';
+import { InstructorsResumeComponent } from './Components/instructors-resume/instructors-resume.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { LargeCardsComponent } from './Components/Commons/large-cards/large-card
     DynamicFiltersComponent,
     InstructorDetailComponent,
     FullCardComponent,
-    LargeCardsComponent
+    LargeCardsComponent,
+    InformationDetailComponent,
+    SubjectsResumeComponent,
+    InstructorsResumeComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { InstructorsComponent } from './Pages/instructors/instructors.component'
 import { StudentsComponent } from './Pages/students/students.component';
 import { SubjectsComponent } from './Pages/subjects/subjects.component';
 import { InstructorDetailComponent } from './Pages/instructor-detail/instructor-detail.component';
+import { InformationDetailComponent } from './Pages/information-detail/information-detail.component';
 
 const routes: Routes = [
   { path: 'calendarPath', component: CalendarComponent },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'subjectsPath', component: SubjectsComponent },
   // { path: 'instructorDetailPath', component: InstructorDetailComponent},
   { path: '', component: InstructorDetailComponent, pathMatch: 'full'},
-  { path: 'instructorDetailPath/:Name/:ColorBG/:ColorBrd', component: InstructorDetailComponent }
+  { path: 'instructorDetailPath/:Name/:ColorBG/:ColorBrd', component: InstructorDetailComponent },
+  { path: 'informationDetailPath/:Name/:ColorBG/:ColorBrd', component: InformationDetailComponent }
 ];
 
 @NgModule({
@@ -22,4 +24,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
 
