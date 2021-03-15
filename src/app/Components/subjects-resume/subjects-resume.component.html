@@ -1,1 +1,17 @@
-<p>subjects-resume works!</p>
+<div class="row rowUpper">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body ">
+        <h4 class="card-title WhiteCard">Synopsis of the subject's objectives and background</h4>
+        <p class="card-text">{{Description}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card" [style.background-color]="ColorBG">
+      <div class="card-body dFlex">
+        <img src={{ImgUrl}} alt="" class="ImgRight">
+      </div>
+    </div>
+  </div>
+</div>

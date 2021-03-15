@@ -14,7 +14,7 @@
           <h3 style="Color:#58B092;">Subjects</h3>
         </div>
       </div>
-      {{getTotal()}}<common-large-cards *ngFor="let item of SubjectsArray" [ColorBG]="ColorBG" [ColorBrd]="ColorBrd" [SubjectTitle]="item['SubjectTitle']" [InstructorWhoGive]="item['Teacher']" [Description]="item['Description']">{{getTotal()}}</common-large-cards>
+      {{getTotal()}}<common-large-cards *ngFor="let item of SubjectsArray" [ColorBG]="ColorBG" [ColorBrd]="ColorBrd" [SubjectTitle]="item['SubjectTitle']" [InstructorWhoGive]="item['Teacher']" [Description]="item['Description']" [Img]="getInstructor(item['Teacher'])">{{getTotal()}}</common-large-cards>
     </div>
   </div>
 </div>

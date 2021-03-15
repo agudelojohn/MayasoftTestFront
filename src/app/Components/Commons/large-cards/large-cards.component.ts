@@ -13,6 +13,9 @@ export class LargeCardsComponent implements OnInit {
   @Input() InstructorWhoGive:String;
   @Input() Description: String;
   @Input() Features: String[];
+  @Input() Img:String;
+
+  public TypeInformation:String = "Subject";
 
   constructor() { }
 

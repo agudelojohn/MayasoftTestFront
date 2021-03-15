@@ -2,14 +2,15 @@
 <div class="container">
   <div class="row main-row">
     <div class="col-3">
-      <common-full-card [ImgUrl]="ImgUrl" [Name]="Name" [SubjectsByTeacher]="SubjectsByTeacher" [Features]="Features"
+      <common-full-card [ImgUrl]="ImgUrl" [Name]="InstructorName" [SubjectsByTeacher]="SubjectsByTeacher" [Features]="Features"
         [ColorBG]="ColorBG" [ColorBrd]="ColorBrd"></common-full-card>
     </div>
     <div class="col-9">
       <div class="container-fluid">
         <div class="row second-row">
           <div class=container>
-              <app-instructors-resume [ColorBG]="ColorBG" [Description]="Description" [ImgUrl]="ImgUrl"></app-instructors-resume>
+              <app-instructors-resume *ngIf="TypeInformation == 'Instructor'" [ColorBG]="ColorBG" [Description]="Description" [ImgUrl]="ImgUrl"></app-instructors-resume>
+              <app-subjects-resume *ngIf="TypeInformation == 'Subject'" [ColorBG]="ColorBG" [Description]="Description" [ImgUrl]="ImgSubjectData"></app-subjects-resume>
             <div class="row rowLower">
               <div class="col-6">
                 <div class="card cardLower" [style.background-color]="ColorBG">

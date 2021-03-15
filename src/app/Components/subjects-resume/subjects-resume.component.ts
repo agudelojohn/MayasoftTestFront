@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-subjects-resume',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subjects-resume.component.css']
 })
 export class SubjectsResumeComponent implements OnInit {
+
+  @Input() ColorBG: String;
+  @Input() Description: String;
+  @Input() ImgUrl: string;
 
   constructor() { }
 

@@ -15,6 +15,8 @@ export class CardsComponent implements OnInit {
   @Input() ColorBrd: String;
   @Input() ProfileUrl: String;
 
+  public TypeInformation:String = "Instructor";
+
   public Subjects: String;
   constructor() { }
 

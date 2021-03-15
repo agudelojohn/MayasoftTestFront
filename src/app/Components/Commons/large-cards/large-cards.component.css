@@ -41,4 +41,26 @@ img{
 
 .col-6{
   display: flex;
+  max-height: 11rem;
+  min-height: 11rem;
+}
+
+.card-text,.card-subtitle,.card-title{
+  font-size: 11px;
+}
+p{
+  height: 4rem;
+  overflow: hidden;
+}
+
+.rowBottom{
+  max-height: 2rem;
+}
+
+.btn{
+  min-height: 2rem;
+  max-height: 2rem;
+  text-align: center;
+  color:white !important;
+  font-size: 10px;
 }

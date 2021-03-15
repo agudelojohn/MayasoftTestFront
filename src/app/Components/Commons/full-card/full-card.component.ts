@@ -16,6 +16,7 @@ export class FullCardComponent implements OnInit {
   @Input() ProfileUrl: String;
 
   public Subjects: String;
+  public TypeInformation:String = "Instructor";
   constructor() { }
 
   ngOnInit(): void {
