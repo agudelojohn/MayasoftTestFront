@@ -56,7 +56,7 @@ img{
   height: 100px;
   min-width: 228px;
   max-width: 228px;
-  margin-left: -1.3rem;
+  margin-left: -1.2rem;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   min-height: 11rem;
@@ -89,6 +89,10 @@ img{
 
 }
 
+.squareImgs:hover{
+  border: 3px solid white;
+}
+
 .projectsRow_1{
   margin-left: 10px;
   margin-top: -10px;
@@ -102,6 +106,10 @@ img{
   border-radius: 50%;
   margin-left: -5px;
   border: 1px solid white;
+}
+.circleImgs:hover{
+  width: 2.3rem;
+  height: 2.3rem;
 }
 .studentsRow_2{
   margin-left: 55px;

@@ -31,3 +31,12 @@ img{
   margin: auto;
   border-radius: 10px;
 }
+
+.card-body{
+  max-height: 16rem;
+}
+
+.card-text{
+max-height: 10.5rem;
+overflow: hidden;
+}
