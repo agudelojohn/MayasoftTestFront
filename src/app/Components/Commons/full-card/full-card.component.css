@@ -1,3 +1,6 @@
+.container-fluid{
+  height: 100%;
+}
 .imageContainer {
   width: auto;
   max-height: 9rem;
@@ -58,4 +61,16 @@ img{
   border-bottom-right-radius: 25px;
   min-height: 11rem;
   max-height: 11rem;
+}
+
+.studentsRow, .projectsRow{
+  min-height: 50%;
+  max-height: 50%;
+}
+
+.titleLower{
+  margin: auto;
+  display: block;
+  font-size: 10px;
+  color:white;
 }

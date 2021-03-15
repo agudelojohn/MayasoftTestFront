@@ -1,3 +1,4 @@
+<h1>Type={{TypeInformation}}</h1>
 <div class="container-fluid">
   <div class="card MainCard">
     <div class="row mainRow">
@@ -6,16 +7,20 @@
       </div>
       <div class="col-6 right" [style.background-color]="ColorBG">
         <div class="card-body">
-          <a [routerLink]="['/informationDetailPath', SubjectTitle,ColorBG,ColorBrd,TypeInformation]" class="cardLink">
+          <a  [routerLink]="['/informationDetailPath', SubjectTitle,ColorBG,ColorBrd,'Subject']" class="cardLink">
             <h5 class="card-title">{{SubjectTitle}}</h5>
           </a>
-          <a [routerLink]="['/informationDetailPath', InstructorWhoGive,ColorBG,ColorBrd]"class="cardLink">
+          <a [routerLink]="['/informationDetailPath', InstructorWhoGive,ColorBG,ColorBrd,'Instructor']"class="cardLink">
             <h6 class="card-subtitle ">{{InstructorWhoGive}}</h6>
           </a>
           <p class="card-text" maxlength="20">{{Description}}</p>
           <div class="row rowBottom">
-            <div class="col-2">  </div>
-            <div class="col-6"></div>
+            <div class="col-4">
+              <div class=row>
+                <i class="bi bi-instagram"></i><i class="bi bi-twitter"></i><i class="bi bi-facebook"></i><i class="bi bi-globe"></i>
+              </div>
+            </div>
+            <div class="col-4"></div>
             <div class="col-4 align-center"><a [style.background-color]="ColorBrd" class="btn ">CONTACT</a></div>
           </div>
         </div>

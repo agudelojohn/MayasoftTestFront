@@ -2,19 +2,21 @@
 <div class="container">
   <div class="row main-row">
     <div class="col-3">
-      <common-full-card [ImgUrl]="ImgUrl" [Name]="InstructorName" [SubjectsByTeacher]="SubjectsByTeacher" [Features]="Features"
-        [ColorBG]="ColorBG" [ColorBrd]="ColorBrd"></common-full-card>
+      <common-full-card [ImgUrl]="ImgUrl" [Name]="InstructorName" [SubjectsByTeacher]="SubjectsByTeacher"
+        [Features]="Features" [ColorBG]="ColorBG" [ColorBrd]="ColorBrd"></common-full-card>
     </div>
     <div class="col-9">
       <div class="container-fluid">
         <div class="row second-row">
           <div class=container>
-              <app-instructors-resume *ngIf="TypeInformation == 'Instructor'" [ColorBG]="ColorBG" [Description]="Description" [ImgUrl]="ImgUrl"></app-instructors-resume>
-              <app-subjects-resume *ngIf="TypeInformation == 'Subject'" [ColorBG]="ColorBG" [Description]="Description" [ImgUrl]="ImgSubjectData"></app-subjects-resume>
+            <app-instructors-resume *ngIf="TypeInformation == 'Instructor'" [ColorBG]="ColorBG"
+              [Description]="Description" [ImgUrl]="ImgUrl"></app-instructors-resume>
+            <app-subjects-resume *ngIf="TypeInformation == 'Subject'" [ColorBG]="ColorBG" [Description]="Description"
+              [ImgUrl]="ImgSubjectData"></app-subjects-resume>
             <div class="row rowLower">
               <div class="col-6">
                 <div class="card cardLower" [style.background-color]="ColorBG">
-                  <div class="card-body dFlex" >
+                  <div class="card-body dFlex">
                     <img src={{ImgUrl}} alt="">
                   </div>
                 </div>
@@ -22,8 +24,24 @@
               <div class="col-6">
                 <div class="card cardLower" [style.background-color]="ColorBrd">
                   <div class="card-body">
-                    <h5 class="card-title">Description of the instructor and their background</h5>
-                    <p class="card-text">{{Description}}</p>
+                    <div class="row rowCommensUp text-left">
+                      <div class="col-2 containerMiniImg">
+                        <img class="miniImg"
+                        src="data:image/jpeg;base64,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"
+                        alt="">
+                      </div>
+                      <div class="col-8">
+                        Name
+                      </div>
+                    </div>
+                    <div class="row rowCommensDown">
+                      <div class="col-2">
+
+                      </div>
+                      <div class="col-8">
+                        Para carro es una maleta, como una maestro fig teclado es una paris coo control
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

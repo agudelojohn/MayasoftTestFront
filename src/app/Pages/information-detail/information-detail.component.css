@@ -61,3 +61,22 @@ img{
   display: block;
   margin: auto;
 }
+.rowCommensUp{
+  min-height: 3rem;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+.rowCommensDown{
+  min-height: 6rem;
+  color: white;
+  font-size: 12px;
+}
+
+.miniImg{
+  max-width: 3rem;
+  border-radius: 50%;
+}
+.containerMiniImg{
+  min-height: 100%;
+}

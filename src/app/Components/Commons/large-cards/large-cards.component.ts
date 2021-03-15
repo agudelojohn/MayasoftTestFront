@@ -15,11 +15,17 @@ export class LargeCardsComponent implements OnInit {
   @Input() Features: String[];
   @Input() Img:String;
 
-  public TypeInformation:String = "Subject";
+  public TypeInformation:String;
 
-  constructor() { }
+  constructor() {
+    this.TypeInformation = "";
+  }
 
   ngOnInit(): void {
+  }
+
+  changeTypeInfo(Type:String):void{
+    this.TypeInformation = Type;
   }
 
 }
