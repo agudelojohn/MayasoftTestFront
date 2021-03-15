@@ -17,7 +17,7 @@ export class InstructorsComponent implements OnInit {
 
   constructor() {
 
-    this.View = 1;
+    this.View = 0;
   }
 
   ngOnInit(): void {
