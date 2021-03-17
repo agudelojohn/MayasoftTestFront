@@ -6,10 +6,10 @@
       </div>
       <div class="col-6 right" [style.background-color]="ColorBG">
         <div class="card-body">
-          <a  [routerLink]="['/informationDetailPath', SubjectTitle,ColorBG,ColorBrd,'Subject']" class="cardLink">
+          <a  [routerLink]="['/informationDetailPath', SubjectTitle,ColorBG,ColorBrd,'Subject','subjectsList']" class="cardLink">
             <h5 class="card-title">{{SubjectTitle}}</h5>
           </a>
-          <a [routerLink]="['/informationDetailPath', InstructorWhoGive,ColorBG,ColorBrd,'Instructor']"class="cardLink">
+          <a [routerLink]="['/informationDetailPath', InstructorWhoGive,ColorBG,ColorBrd,'Instructor','subjectsList']"class="cardLink">
             <h6 class="card-subtitle ">{{InstructorWhoGive}}</h6>
           </a>
           <p class="card-text" maxlength="20">{{Description}}</p>

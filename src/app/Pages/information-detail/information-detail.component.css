@@ -21,7 +21,7 @@
   padding-left: 5%;
 }
 
-.col-9{
+.mainGroup{
   min-height: 28rem;
   max-height: 28rem;
 }
@@ -80,4 +80,20 @@ img{
 }
 .containerMiniImg{
   min-height: 100%;
+}
+h3{
+  Color:#58B092;
+  padding-top:2rem;
+  margin-bottom: -2rem;
+}
+.rowBack{
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 10%;
+  font-size: 2rem;
+}
+
+a{
+  text-decoration: none;
+  color: #58B092;
 }

@@ -25,12 +25,14 @@ export class InformationDetailComponent implements OnInit {
   public Description: String;
   public Features: String[];
   public InstructorName:String;
+  public PreviousPage:String;
 
   constructor(private _route: ActivatedRoute) {
     this.Name = this._route.snapshot.paramMap.get('Name');
     this.ColorBG = this._route.snapshot.paramMap.get('ColorBG');
     this.ColorBrd = this._route.snapshot.paramMap.get('ColorBrd');
     this.TypeInformation = this._route.snapshot.paramMap.get('TypeInformation')
+    this.PreviousPage = this._route.snapshot.paramMap.get('PreviousPage')
     if (this.TypeInformation == 'Instructor') {
       this.InstructorsArray.forEach(item => {
         if (item.Name == this.Name) {

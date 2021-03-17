@@ -16,7 +16,7 @@ const routes: Routes = [
   // { path: 'instructorDetailPath', component: InstructorDetailComponent},
   { path: '', component: InstructorDetailComponent, pathMatch: 'full'},
   { path: 'instructorDetailPath/:Name/:ColorBG/:ColorBrd', component: InstructorDetailComponent },
-  { path: 'informationDetailPath/:Name/:ColorBG/:ColorBrd/:TypeInformation', component: InformationDetailComponent }
+  { path: 'informationDetailPath/:Name/:ColorBG/:ColorBrd/:TypeInformation/:PreviousPage', component: InformationDetailComponent }
 ];
 
 @NgModule({
